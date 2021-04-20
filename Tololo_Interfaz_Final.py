@@ -715,7 +715,7 @@ def generate_csv(n_clicks, start_date, end_date):
         df_all = pd.concat([DMC_data,EBAS_data]).loc[start_date:end_date]
         return send_data_frame(df_all.to_csv, filename="Tololo_Time_Series_Dates_Selected.csv")    
 if __name__ == '__main__':
-    app.run_server(debug=True, host='0.0.0.0', port=8050)
+    app.run_server(debug=False, host='0.0.0.0', port=8050)
 
 
                                                               
